@@ -1,7 +1,7 @@
 # 🏗  Scaffold-ETH Fleek
 
 ## 🧪 Introduction
-This is a extension of [Scaffold-ETH 2](./README-SE-2.md) to deploy on Fleek
+This is a extension of [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2) to deploy on Fleek
 
 [Fleek](https://fleet.xyz)  is a platform that allows you to deploy your website on IPFS and host it for free.
 
