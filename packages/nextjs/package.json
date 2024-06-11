@@ -11,6 +11,7 @@
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "check-types": "tsc --noEmit --incremental",
     "fleek": "fleek",
+    "fleek:login": "fleek login",
     "fleek:deploy": "rm -rf out && next build && fleek sites deploy",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"

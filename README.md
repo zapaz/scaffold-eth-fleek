@@ -1,13 +1,11 @@
 # 🏗  Scaffold-ETH Fleek
 
 ## 🧪 Introduction
-This is a extension of [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2) to deploy on Fleek
+Scaffold-ETH Fleek is a extension of [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2) to deploy your builds with Fleek on decentralized storage.
 
 [Fleek](https://fleet.xyz)  is a platform that allows you to deploy your website on IPFS and host it for free.
 
 This guide will show you how to do deploy your SE-2 build to Fleek.
-
-
 
 
 ## ✅ Getting Started
@@ -15,7 +13,7 @@ This guide will show you how to do deploy your SE-2 build to Fleek.
 
 2/ From your local computer, login into Fleek with this command:
 ```shell
-$ yarn fleek login
+$ yarn fleek:login
 ```
 
 
@@ -36,7 +34,7 @@ Then your app will be build then uploaded to Fleek.
 
 ## 🚫 Limitations
 
-Note that decentralized storage as IPFS, requires using `client only` application, i.e. without server side.
+Note that decentralized storage as IPFS, requires `client only` application (i.e. SPA [`Single Page Application`](https://blogonyourown.com/single-page-application/)) without server side.
 
 With NextJs this is possible by using [Static HTML Export](https://nextjs.org/docs/app/building-your-application/deploying#static-html-export)
 
