@@ -3,7 +3,7 @@
 ## 🧪 Introduction
 Scaffold-ETH Fleek is a extension of [Scaffold-ETH 2](https://github.com/scaffold-eth/scaffold-eth-2) to deploy your builds with Fleek on decentralized storage.
 
-[Fleek](https://fleet.xyz)  is a platform that allows you to deploy your website on IPFS and host it for free.
+[Fleek](https://fleek.xyz)  is a platform that allows you to deploy your website on IPFS and host it for free.
 
 This guide will show you how to do deploy your SE-2 build to Fleek.
 
