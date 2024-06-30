@@ -1,14 +1,11 @@
+import { useSearchParams } from "next/navigation";
+import { AddressComponent } from "~~/app/blockexplorer/_components/AddressComponent";
+import { isZeroAddress } from "~~/utils/scaffold-eth/common";
 import fs from "fs";
 import path from "path";
 import { hardhat } from "viem/chains";
-import { AddressComponent } from "~~/app/blockexplorer/_components/AddressComponent";
 import deployedContracts from "~~/contracts/deployedContracts";
-import { isZeroAddress } from "~~/utils/scaffold-eth/common";
 import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
-
-type PageProps = {
-  params: { address: string };
-};
 
 async function fetchByteCodeAndAssembly(buildInfoDirectory: string, contractPath: string) {
   const buildInfoFiles = fs.readdirSync(buildInfoDirectory);
@@ -82,13 +79,15 @@ export function generateStaticParams() {
   return [{ address: "0x0000000000000000000000000000000000000000" }];
 }
 
-const AddressPage = async ({ params }: PageProps) => {
-  const address = params?.address as string;
+const AddressPage = () => {
+  const searchParams = useSearchParams();
+  const address = searchParams.get("address");
 
-  if (isZeroAddress(address)) return null;
+  if (!address || isZeroAddress(address)) return null;
 
   const contractData: { bytecode: string; assembly: string } | null = await getContractData(address);
   return <AddressComponent address={address} contractData={contractData} />;
 };
+
 
 export default AddressPage;

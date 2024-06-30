@@ -18,7 +18,7 @@ export const SearchBar = () => {
       try {
         const tx = await client?.getTransaction({ hash: searchInput });
         if (tx) {
-          router.push(`/blockexplorer/transaction/${searchInput}`);
+          router.push(`/blockexplorer/transaction/?tx=${searchInput}`);
           return;
         }
       } catch (error) {
@@ -27,7 +27,7 @@ export const SearchBar = () => {
     }
 
     if (isAddress(searchInput)) {
-      router.push(`/blockexplorer/address/${searchInput}`);
+      router.push(`/blockexplorer/address/?address=${searchInput}`);
       return;
     }
   };
