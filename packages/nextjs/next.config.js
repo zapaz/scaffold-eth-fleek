@@ -2,7 +2,7 @@
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
+  output: process.env.NEXT_PUBLIC_PROD ? "export" : "standalone",
   trailingSlash: true,
   images: { unoptimized: true },
 

@@ -12,7 +12,7 @@
     "check-types": "tsc --noEmit --incremental",
     "fleek": "fleek",
     "fleek:login": "fleek login",
-    "fleek:deploy": "rm -rf out && next build && fleek sites deploy",
+    "fleek:deploy": "NEXT_PUBLIC_PROD=true next build && fleek sites deploy",
     "vercel": "vercel",
     "vercel:yolo": "vercel --build-env NEXT_PUBLIC_IGNORE_BUILD_ERROR=true"
   },
