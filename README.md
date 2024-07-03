@@ -29,9 +29,9 @@ First time it will ask you to init your project, use these params:
 - optional build `no`
 - config format `JSON`
 
-Then your app will be build then uploaded to Fleek.
+Your app will be build then uploaded to Fleek.
 
-For example, this repo is deployed to https://purring-piano-prehistoric.on-fleek.app/
+For example, this repo is deployed to [https://purring-piano-prehistoric.on-fleek.app/](https://purring-piano-prehistoric.on-fleek.app/)
 
 ## 🚫 Limitations
 
