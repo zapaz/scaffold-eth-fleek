@@ -1,0 +1,8 @@
+{
+  "sites": [
+    {
+      "slug": "scaffold-eth-fleek-foundry",
+      "distDir": "out"
+    }
+  ]
+}
